@@ -19,3 +19,34 @@ const sports = new Swiper(".sports", {
     nextEl: ".stoprt-slide-next",
   },
 });
+
+const products = new Swiper(".products", {
+  modules: [Navigation, Autoplay],
+  loop: true,
+  autoplay: {
+    delay: 40000
+  },
+
+  spaceBetween: 24,
+
+  slidesPerView: 1,
+
+  navigation: {
+    prevEl: ".product-slide-prev",
+    nextEl: ".product-slide-next",
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2
+    },
+    800: {
+      slidesPerView: 3
+    },
+    1000: {
+      slidesPerView: 4
+    }
+
+  }
+
+})
