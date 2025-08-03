@@ -15,14 +15,33 @@
             class="flex flex-col sm:max-lg:flex-row max-lg:items-center justify-between gap-2 font-oswald-regular uppercase text-sm"
           >
             <nav class="flex flex-wrap gap-4">
-              <a href="#">my account</a>
-              <a href="#">my whishlist</a>
-              <a href="#">checkout</a>
-              <a href="#">log in</a>
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+                >my account</a
+              >
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+                >my whishlist</a
+              >
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+                >checkout</a
+              >
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+                >log in</a
+              >
             </nav>
 
             <div class="flex gap-4">
-              <a href="#">
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+              >
                 <div class="flex items-center gap-2">
                   <p>english</p>
 
@@ -38,7 +57,10 @@
                 </div>
               </a>
 
-              <a href="#">
+              <a
+                href="#"
+                class="transition-all duration-300 hover:text-yellow-400"
+              >
                 <div class="flex items-center gap-2">
                   <p>dollar</p>
 
@@ -96,7 +118,7 @@
           <ul class="flex shrink-0 max-lg:hidden">
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">menu</p>
 
@@ -114,7 +136,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">mega menu</p>
 
@@ -132,7 +154,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">features</p>
 
@@ -150,7 +172,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">blog</p>
 
@@ -168,7 +190,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">shop</p>
 
@@ -186,7 +208,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">contact</p>
               </div>
@@ -194,7 +216,7 @@
 
             <li>
               <div
-                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
+                class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200 transition-all duration-300 hover:text-yellow-400"
               >
                 <p class="uppercase font-oswald-regular">about</p>
               </div>
@@ -243,6 +265,62 @@
         </div>
       </div>
     </header>
+
+    <main class="container bg-white py-5">
+      <div class="container-content">
+        <section class="mb-10">
+          <div class="sports swiper relative">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/slide2.jpg" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="images/slide3.jpg" alt="" />
+              </div>
+            </div>
+
+            <div
+              class="stoprt-slide-prev absolute top-1/2 -translate-y-1/2 left-0 bg-black/30 z-10 text-white cursor-pointer transition-all duration-300 hover:bg-yellow-400 h-28 p-1 flex justify-center items-center"
+            >
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <use href="icon.svg#arrow-left"></use>
+              </svg>
+            </div>
+
+            <div
+              class="stoprt-slide-next absolute top-1/2 -translate-y-1/2 right-0 bg-black/30 z-10 text-white cursor-pointer transition-all duration-300 hover:bg-yellow-400 h-28 p-1 flex justify-center items-center"
+            >
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <use href="icon.svg#arrow-right"></use>
+              </svg>
+            </div>
+
+            <div class="custom-pagination"></div>
+          </div>
+        </section>
+
+        <section class="mb-10">
+          
+        </section>
+      </div>
+    </main>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
