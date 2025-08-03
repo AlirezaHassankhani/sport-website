@@ -29,8 +29,6 @@ const products = new Swiper(".products", {
 
   spaceBetween: 24,
 
-  slidesPerView: 1,
-
   navigation: {
     prevEl: ".product-slide-prev",
     nextEl: ".product-slide-next",
@@ -49,4 +47,24 @@ const products = new Swiper(".products", {
 
   }
 
+})
+
+const blogs = new Swiper(".blogs", {
+  modules: [Navigation, Autoplay],
+  loop: true,
+  spaceBetween: 24,
+
+  navigation: {
+    prevEl: ".blog-slide-prev",
+    nextEl: ".blog-slide-next"
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2
+    },
+    1000: {
+      slidesPerView: 3
+    }
+  }
 })
