@@ -13,10 +13,6 @@ const sports = new Swiper(".sports", {
   pagination: {
     el: ".custom-pagination",
     clickable: true,
-    renderBullet: function(index, classList) {
-        console.log(classList)
-        return `<span class="${classList}"></span>`
-    }
   },
   navigation: {
     prevEl: ".stoprt-slide-prev",
