@@ -38,10 +38,10 @@
 
 @layer utilities {
   .container {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-[1260px] mx-auto;
   }
   .container-content {
-    @apply max-w-6xl px-4 mx-auto;
+    @apply max-w-[1200px] px-4 mx-auto;
   }
 }
 

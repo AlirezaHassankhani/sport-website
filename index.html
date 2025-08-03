@@ -6,11 +6,13 @@
     <title>navin sazan</title>
   </head>
   <body>
-    <header class="container bg-white py-3">
+    <header class="container bg-white py-5">
       <div class="container-content">
-        <div class="flex items-center py-5">
+        <div
+          class="relative flex max-lg:flex-col justify-between lg:items-center gap-y-6 mb-8"
+        >
           <div
-            class="flex flex-col gap-2 font-oswald-regular uppercase text-sm flex-2/5"
+            class="flex flex-col sm:max-lg:flex-row max-lg:items-center justify-between gap-2 font-oswald-regular uppercase text-sm"
           >
             <nav class="flex flex-wrap gap-4">
               <a href="#">my account</a>
@@ -20,25 +22,58 @@
             </nav>
 
             <div class="flex gap-4">
-              <a href="#">english</a>
-              <a href="#">dollar</a>
+              <a href="#">
+                <div class="flex items-center gap-2">
+                  <p>english</p>
+
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-3"
+                  >
+                    <use href="icon.svg#chevron-down"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <a href="#">
+                <div class="flex items-center gap-2">
+                  <p>dollar</p>
+
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-3"
+                  >
+                    <use href="icon.svg#chevron-down"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
 
-          <div class="flex-1/5">
-            <img src="./images/logo.png" class="mx-auto" alt="logo" />
-          </div>
-
-          <div class="flex justify-end items-center gap-4 flex-2/5">
-            <div>
-              <img src="./images/icon-cart.png" alt="" />
+          <div class="flex justify-between">
+            <div class="lg:absolute left-1/2 lg:-translate-x-1/2">
+              <a href="/">
+                <img src="./images/logo.png" alt="logo" />
+              </a>
             </div>
 
-            <div class="uppercase font-oswald-regular">
-              <p class="text-xs mb-1 tracking-wider">shoping cart</p>
-              <p class="text-xs text-center">
-                0 item - <span class="text-yellow-400">£0.00</span>
-              </p>
+            <div class="flex justify-end items-center gap-4">
+              <div>
+                <img src="./images/icon-cart.png" alt="" />
+              </div>
+
+              <div class="uppercase font-oswald-regular">
+                <p class="text-xs mb-1 tracking-wider">shoping cart</p>
+                <p class="text-xs text-center">
+                  0 item - <span class="text-yellow-400">£0.00</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -46,7 +81,19 @@
         <div
           class="bg-primary-100 border border-primary-200 flex justify-between items-center"
         >
-          <ul class="flex">
+          <div class="lg:hidden ml-2 text-yellow-400">
+            <svg
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="size-10"
+            >
+              <use href="icon.svg#bar"></use>
+            </svg>
+          </div>
+
+          <ul class="flex shrink-0 max-lg:hidden">
             <li>
               <div
                 class="flex items-center gap-2 text-sm py-4 px-5 cursor-pointer border-r border-primary-200"
@@ -54,18 +101,13 @@
                 <p class="uppercase font-oswald-regular">menu</p>
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-3"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
+                  <use href="icon.svg#chevron-down"></use>
                 </svg>
               </div>
             </li>
@@ -77,18 +119,13 @@
                 <p class="uppercase font-oswald-regular">mega menu</p>
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-3"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
+                  <use href="icon.svg#chevron-down"></use>
                 </svg>
               </div>
             </li>
@@ -100,18 +137,13 @@
                 <p class="uppercase font-oswald-regular">features</p>
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-3"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
+                  <use href="icon.svg#chevron-down"></use>
                 </svg>
               </div>
             </li>
@@ -123,18 +155,13 @@
                 <p class="uppercase font-oswald-regular">blog</p>
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-3"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
+                  <use href="icon.svg#chevron-down"></use>
                 </svg>
               </div>
             </li>
@@ -146,18 +173,13 @@
                 <p class="uppercase font-oswald-regular">shop</p>
 
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-3"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
+                  <use href="icon.svg#chevron-down"></use>
                 </svg>
               </div>
             </li>
@@ -179,32 +201,41 @@
             </li>
           </ul>
 
-          <div class="border border-primary-200 flex mr-4">
-            <select name="" class="bg-white border-r border-primary-200 cursor-pointer pl-2.5 pr-5 outline-none capitalize">
-              <option value="all">all</option>
-            </select>
+          <div class="border border-primary-200 flex m-2">
+            <div
+              class="bg-white border-r border-primary-200 cursor-pointer p-2 flex justify-between items-center min-w-[100px] max-lg:hidden"
+            >
+              <p class="text-sm capitalize">all</p>
+
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-3"
+              >
+                <use href="icon.svg#chevron-down"></use>
+              </svg>
+            </div>
 
             <div class="flex">
               <input
                 type="text"
-                class="bg-white indent-2 outline-none px-2 py-1 w-full text-sm"
+                class="bg-white indent-1 outline-none px-2 py-1 w-full text-sm"
                 placeholder="Search for products"
               />
 
-              <button class="bg-yellow-400 cursor-pointer text-white px-3 py-2.5">
+              <button
+                class="bg-yellow-400 cursor-pointer text-white px-3 py-2.5"
+              >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
                   class="size-5"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                  />
+                  <use href="icon.svg#search"></use>
                 </svg>
               </button>
             </div>
