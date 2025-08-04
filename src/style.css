@@ -37,6 +37,8 @@
   --color-primary-300: #999;
   --color-primary-400: #555;
 
+  --color-primary-500: #333;
+
   --color-yellow-400: #FFC000;
 }
 
@@ -52,7 +54,7 @@
 @layer base {
   body {
     @apply bg-primary-100;
-    color: rgb(51, 51, 51);
+    color: var(--color-primary-500);
   }
 }
 
