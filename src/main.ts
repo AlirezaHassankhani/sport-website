@@ -68,3 +68,8 @@ const blogs = new Swiper(".blogs", {
     }
   }
 })
+
+const specials = new Swiper(".specials", {
+  modules: [Navigation, Autoplay],
+  loop: true,
+})
