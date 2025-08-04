@@ -1,7 +1,7 @@
 import "./style.css";
 import Swiper from "swiper";
 import "swiper/css";
-import "swiper/css/pagination"
+import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const sports = new Swiper(".sports", {
@@ -24,7 +24,7 @@ const products = new Swiper(".products", {
   modules: [Navigation, Autoplay],
   loop: true,
   autoplay: {
-    delay: 40000
+    delay: 4000,
   },
 
   spaceBetween: 24,
@@ -36,40 +36,51 @@ const products = new Swiper(".products", {
 
   breakpoints: {
     600: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     800: {
-      slidesPerView: 3
+      slidesPerView: 3,
     },
     1000: {
-      slidesPerView: 4
-    }
-
-  }
-
-})
+      slidesPerView: 4,
+    },
+  },
+});
 
 const blogs = new Swiper(".blogs", {
   modules: [Navigation, Autoplay],
   loop: true,
   spaceBetween: 24,
 
+  autoplay: {
+    delay: 4000,
+  },
+
   navigation: {
     prevEl: ".blog-slide-prev",
-    nextEl: ".blog-slide-next"
+    nextEl: ".blog-slide-next",
   },
 
   breakpoints: {
     600: {
-      slidesPerView: 2
+      slidesPerView: 2,
     },
     1000: {
-      slidesPerView: 3
-    }
-  }
-})
+      slidesPerView: 3,
+    },
+  },
+});
 
 const specials = new Swiper(".specials", {
   modules: [Navigation, Autoplay],
   loop: true,
-})
+
+  autoplay: {
+    delay: 4000,
+  },
+
+  navigation: {
+    prevEl: ".special-slide-prev",
+    nextEl: ".special-slide-next",
+  },
+});
