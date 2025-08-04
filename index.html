@@ -779,6 +779,101 @@
         </section>
 
         <section class="mb-10">
+          <div class="flex max-lg:flex-col">
+            <div class="flex-2/3 overflow-hidden">
+              <div class="shop swiper relative h-full">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/sl1.jpg" class="w-full h-full object-cover" alt="shop picture" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/sl2.jpg" class="w-full h-full object-cover" alt="shop picture" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/sl3.jpg" class="w-full h-full object-cover" alt="shop picture" />
+                  </div>
+                </div>
+
+                <div
+                  class="shop-slide-prev absolute top-1/2 -translate-y-1/2 left-0 bg-black/30 z-10 text-white cursor-pointer transition-colors duration-500 hover:bg-yellow-400 h-28 p-1 flex justify-center items-center"
+                >
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <use href="icon.svg#arrow-left"></use>
+                  </svg>
+                </div>
+
+                <div
+                  class="shop-slide-next absolute top-1/2 -translate-y-1/2 right-0 bg-black/30 z-10 text-white cursor-pointer transition-colors duration-500 hover:bg-yellow-400 h-28 p-1 flex justify-center items-center"
+                >
+                  <svg
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <use href="icon.svg#arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1/3">
+              <div class="p-12 lg:border-l-4 border-black h-full bg-primary-100">
+                <div class="border-b pb-8 mb-5 max-lg:text-center">
+                  <h1
+                    class="text-3xl font-oswald-bold uppercase tracking-tight mb-1"
+                  >
+                    shop the look
+                  </h1>
+                  <h3 class="text-lg font-oswald-regular uppercase">
+                    over 5000 products
+                  </h3>
+                </div>
+
+                <div class="flex flex-col gap-4 max-lg:items-center">
+                  <p class="uppercase font-oswald-regular text-3xl">upto</p>
+
+                  <p class="uppercase text-lg font-oswald-regular">
+                    on all products
+                  </p>
+
+                  <a
+                    class="relative flex justify-between bg-white w-[150px] cursor-pointer group"
+                  >
+                    <div
+                      class="bg-yellow-400 transition-transform duration-500 group-hover:translate-x-[110px] text-white flex justify-center items-center cursor-pointer px-2 z-10"
+                    >
+                      <svg
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <use href="icon.svg#arrow-right"></use>
+                      </svg>
+                    </div>
+
+                    <p
+                      class="px-4 py-2 text-sm uppercase font-oswald-regular text-primary-400 transition-[transform, colors] duration-500 group-hover:-translate-x-[65px] group-hover:text-yellow-400 z-0"
+                    >
+                      shop now
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-10">
           <div class="flex flex-col justify-center items-center gap-2.5">
             <h2
               class="font-oswald-bold uppercase text-3xl py-2.5 relative before:absolute before:w-2/3 before:h-[1px] before:bg-yellow-500 before:bottom-0 before:left-1/2 before:-translate-x-1/2"
@@ -1242,8 +1337,8 @@
           </div>
         </section>
 
-        <section class="mb-10">
-          <div class="grid grid-cols-3 gap-6">
+        <section>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div class="border border-primary-200 p-8 space-y-7">
               <h3 class="font-oswald-semibold uppercase text-lg">specials</h3>
 

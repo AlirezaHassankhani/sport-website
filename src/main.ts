@@ -47,6 +47,20 @@ const products = new Swiper(".products", {
   },
 });
 
+const shop = new Swiper(".shop", {
+  modules: [Autoplay, Navigation],
+  loop: true,
+
+  autoplay: {
+    delay: 4000,
+  },
+
+  navigation: {
+    prevEl: ".shop-slide-prev",
+    nextEl: ".shop-slide-next",
+  },
+});
+
 const blogs = new Swiper(".blogs", {
   modules: [Navigation, Autoplay],
   loop: true,
